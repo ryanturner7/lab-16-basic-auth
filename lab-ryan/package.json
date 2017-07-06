@@ -4,6 +4,9 @@
   "description": "![cf](https://i.imgur.com/7v5ASc8.png) lab 16 express basic authorization ======",
   "main": "index.js",
   "scripts": {
+    "start": "node_index.js",
+    "start-db": "mkdir -p ./db && mongod --dbpath ./db",
+    "stop-db": "killall mongod",
     "test": "mocha"
   },
   "repository": {
@@ -29,6 +32,7 @@
   },
   "devDependencies": {
     "expect": "^1.20.2",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "superagent": "^3.5.2"
   }
 }
